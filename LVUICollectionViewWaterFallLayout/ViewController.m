@@ -20,7 +20,7 @@
 #pragma mark - LVUICollectionViewWaterFallLayoutDelegate
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return CGSizeMake(([UIScreen mainScreen].bounds.size.width - 30) * 0.5f, 20 + indexPath.item * 10);
+    return CGSizeMake(([UIScreen mainScreen].bounds.size.width - 40) / 3., 20 + indexPath.item * 10);
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {

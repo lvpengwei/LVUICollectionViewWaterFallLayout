@@ -96,7 +96,10 @@
             }
             NSInteger index = [self findLeastValueIndexInArray:yArray];
             x = sectionEdgeInsets.left + index * itemSize.width + index * itemSpacing;
-            CGFloat tempY = [yArray[index] integerValue] + (item == 0 ? 0 : lineSpacing);
+            CGFloat tempY = [yArray[index] integerValue];
+            if (tempY > 0) {
+                tempY += lineSpacing;
+            }
             CGRect frame = CGRectMake(x, y + tempY, itemSize.width, itemSize.height);
             yArray[index] = @(tempY + itemSize.height);
             UICollectionViewLayoutAttributes *attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:[NSIndexPath indexPathForItem:item inSection:section]];
