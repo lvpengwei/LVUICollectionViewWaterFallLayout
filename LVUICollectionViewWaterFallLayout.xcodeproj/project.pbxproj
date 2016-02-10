@@ -13,6 +13,7 @@
 		E6E868D41C6A3FBA003E3F9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6E868D21C6A3FBA003E3F9A /* Main.storyboard */; };
 		E6E868D61C6A3FBA003E3F9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6E868D51C6A3FBA003E3F9A /* Assets.xcassets */; };
 		E6E868D91C6A3FBA003E3F9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6E868D71C6A3FBA003E3F9A /* LaunchScreen.storyboard */; };
+		E6E868E21C6A3FDF003E3F9A /* LVUICollectionViewWaterFallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E868E11C6A3FDF003E3F9A /* LVUICollectionViewWaterFallLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		E6E868D51C6A3FBA003E3F9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6E868D81C6A3FBA003E3F9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6E868DA1C6A3FBA003E3F9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6E868E01C6A3FDF003E3F9A /* LVUICollectionViewWaterFallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVUICollectionViewWaterFallLayout.h; sourceTree = "<group>"; };
+		E6E868E11C6A3FDF003E3F9A /* LVUICollectionViewWaterFallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVUICollectionViewWaterFallLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				E6E868D71C6A3FBA003E3F9A /* LaunchScreen.storyboard */,
 				E6E868DA1C6A3FBA003E3F9A /* Info.plist */,
 				E6E868C91C6A3FBA003E3F9A /* Supporting Files */,
+				E6E868E01C6A3FDF003E3F9A /* LVUICollectionViewWaterFallLayout.h */,
+				E6E868E11C6A3FDF003E3F9A /* LVUICollectionViewWaterFallLayout.m */,
 			);
 			path = LVUICollectionViewWaterFallLayout;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6E868D11C6A3FBA003E3F9A /* ViewController.m in Sources */,
+				E6E868E21C6A3FDF003E3F9A /* LVUICollectionViewWaterFallLayout.m in Sources */,
 				E6E868CE1C6A3FBA003E3F9A /* AppDelegate.m in Sources */,
 				E6E868CB1C6A3FBA003E3F9A /* main.m in Sources */,
 			);
