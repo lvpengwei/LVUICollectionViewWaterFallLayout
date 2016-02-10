@@ -51,7 +51,10 @@
     CGFloat x = 0, y = 0;
     NSInteger sections = [self.collectionView numberOfSections];
     for (NSInteger section = 0; section < sections; section++) {
-        UIEdgeInsets sectionEdgeInsets = [delegate collectionView:self.collectionView layout:self insetForSectionAtIndex:section];
+        UIEdgeInsets sectionEdgeInsets = UIEdgeInsetsZero;
+        if ([delegate respondsToSelector:@selector(collectionView:layout:insetForSectionAtIndex:)]) {
+            sectionEdgeInsets = [delegate collectionView:self.collectionView layout:self insetForSectionAtIndex:section];
+        }
         // header
         if ([delegate respondsToSelector:@selector(collectionView:layout:referenceSizeForHeaderInSection:)]) {
             CGSize headerSize = [delegate collectionView:self.collectionView layout:self referenceSizeForHeaderInSection:section];
