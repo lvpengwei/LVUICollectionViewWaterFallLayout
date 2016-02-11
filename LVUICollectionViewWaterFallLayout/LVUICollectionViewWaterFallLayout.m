@@ -61,7 +61,7 @@
             if (CGSizeEqualToSize(headerSize, CGSizeZero)) {
                 [headerFrames addObject:NSNull.null];
             } else {
-                x = (self.collectionView.frame.size.width - sectionEdgeInsets.left - sectionEdgeInsets.right - headerSize.width) * 0.5f;
+                x = (self.collectionView.frame.size.width - headerSize.width) * 0.5f;
                 CGRect headerFrame = CGRectMake(x, y, headerSize.width, headerSize.height);
                 UICollectionViewLayoutAttributes *attributes = [UICollectionViewLayoutAttributes layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionHeader withIndexPath:[NSIndexPath indexPathForItem:0 inSection:section]];
                 attributes.frame = headerFrame;
@@ -119,7 +119,7 @@
             if (CGSizeEqualToSize(footerSize, CGSizeZero)) {
                 [footerFrames addObject:NSNull.null];
             } else {
-                x = (self.collectionView.frame.size.width - sectionEdgeInsets.left - sectionEdgeInsets.right - footerSize.width) * 0.5f;
+                x = (self.collectionView.frame.size.width - footerSize.width) * 0.5f;
                 CGRect footerFrame = CGRectMake(x, y, footerSize.width, footerSize.height);
                 UICollectionViewLayoutAttributes *attributes = [UICollectionViewLayoutAttributes layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionFooter withIndexPath:[NSIndexPath indexPathForItem:0 inSection:section]];
                 attributes.frame = footerFrame;
